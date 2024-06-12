@@ -18,10 +18,6 @@ def game():
         
         character = Map.draw(CPosition, (1,1), '⬛')
         
-        if Map.check_collisions(CPosition, Object=kb1):
-            print('game over')
-            return
-        
         print('\n'*10+Map.MapStr)
         
         Map.erase(CPosition, (1,1))
@@ -36,5 +32,9 @@ def game():
                 CPosition[1] += 1
             case 'D':
                 CPosition[0] += 1
+
+        if Map.check_collisions(CPosition, Object=kb1):
+            print('game over')
+            return
                 
 game()
