@@ -1,4 +1,4 @@
-2d game engine or soemthing idk
+console game engine or something idk
 
 ## _2DMap(MapSize, DefaultPixel)
 	creates the map
